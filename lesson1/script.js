@@ -6,7 +6,7 @@ alert('Температура в градусах Фаренгейта: ' + tf);
 
 //Задание 2
 
-var name = 'Василй';
+var name = 'Василий';
 var admin = '';
 admin = name;
 alert(admin);
