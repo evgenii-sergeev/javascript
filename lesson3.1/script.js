@@ -17,25 +17,29 @@ i++;
 
 //Задание 2
 
-const customerBasket = [
-    ['apple', 5, 20],
-    ['watermelon', 1, 90],
-    ['peach', 3, 25],
-    ['grapes', 1, 40],
-    ['pineapple', 1, 50],
-    ['orange', 10, 30],
-    ['lemon', 2, 20],
-];
+const customerBasket = {
 
-function countBasketCost (arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum = sum + arr[i][1]*arr[i][2];
-    }
-    return sum;
-}
+    basket: [
+        ['apple', 5, 20],
+        ['watermelon', 1, 90],
+        ['peach', 3, 25],
+        ['grapes', 1, 40],
+        ['pineapple', 1, 50],
+        ['orange', 10, 30],
+        ['lemon', 2, 20],
+    ],
 
-console.log('Total cost of your basket is ' + countBasketCost(customerBasket) + '$');
+    countBasketCost() {
+        let sum = 0;
+        for (let i = 0; i < this.basket.length; i++) {
+            sum = sum + this.basket[i][1] * this.basket[i][2];
+        }
+        return sum;
+    },
+
+};
+
+console.log('Total cost of your basket is ' + customerBasket.countBasketCost() + '$');
 
 
 //Задание 3
