@@ -1,0 +1,14 @@
+.catalog {
+}
+
+.product {
+    border: lightgrey solid 1px;
+    width: 100px;
+    margin-bottom: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cart {
+
+}
